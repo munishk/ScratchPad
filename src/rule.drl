@@ -1,0 +1,15 @@
+package test;
+
+rule "sample"
+when
+  ModelOne(!(strVal == "ddrr"), longVal == 4, charVal == 'r')
+then
+  System.out.println("Done");
+end
+
+rule "dample"
+when
+  ModelOne(!(strVal == "ddrr"), longVal == 4)
+then
+  System.out.println("Done");
+end
